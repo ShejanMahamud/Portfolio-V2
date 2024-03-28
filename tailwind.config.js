@@ -9,7 +9,8 @@ export default {
       fontFamily:{
         'cedarville-cursive' : 'Cedarville Cursive',
         'poppins' : 'Poppins',
-        'space-mono' : 'Space Mono'
+        'space-mono' : 'Space Mono',
+        'mukti' : 'Mukti'
       }
     },
   },

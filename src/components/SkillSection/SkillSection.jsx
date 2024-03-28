@@ -11,7 +11,7 @@ const SkillSection = () => {
         <HeadingText bgText={'EXPERTISE'} topText={'SKILLS'}></HeadingText>
         <p className='text-center text-zinc-300 my-5' >Programming Languages, Frameworks, Libraries, Tools, and Technologies I'm working on.</p>
 
-       <div className='grid grid-cols-3 row-auto gap-x-8 gap-y-16 mt-28'>
+       <div className='grid lg:grid-cols-3 grid-cols-1 row-auto gap-x-8 gap-y-16 lg:mt-28 mt-16'>
        <SkillCard title={'HTML'} description={'Markup Language'} level={4} icon={<FaHtml5 />}/>
        <SkillCard title={'CSS'} description={'Stylesheet Language'} level={4} icon={<FaCss3Alt  />}/>
         <SkillCard title={'Tailwind CSS'} description={'CSS Framework'} level={4} icon={<SiTailwindcss />}/>
