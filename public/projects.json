@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "project_image": "https://i.ibb.co/mBT0s23/bookify.png",
+    "project_name": "Bookify",
+    "project_category": "Library Management",
+    "project_type": "Full-Stack",
+    "project_nature": "Personal",
+    "project_code": "https://github.com/ShejanMahamud",
+    "project_live": "https://bookify-library.netlify.app/",
+    "projects_features": [
+      "Librarian and User Role",
+      "Librarian can add book, delete book, update book",
+      "User can borrowed book and return a book",
+      "Login/Registration",
+      "Dashboard for librarian"
+    ],
+    "projects_techs": [
+      "Tailwind CSS",
+      "JavaScript",
+      "React.JS",
+      "React Router",
+      "Tanstack Query",
+      "MongoDB",
+      "Express.JS",
+      "Firebase Auth"
+    ]
+  },
+  {
+    "id": 2,
+    "project_image": "https://i.ibb.co/2s5s5jd/jobify.png",
+    "project_name": "Jobify",
+    "project_category": "Job Portal Web App",
+    "project_type": "Full-Stack",
+    "project_nature": "Personal(In Progress)",
+    "project_code": "https://github.com/ShejanMahamud/Jobify-Front-End",
+    "project_live": "https://jobify-web.netlify.app/",
+    "projects_features": [
+      "Role based authentication and authorization",
+      "Companies can post jobs, see candidates per specific job, candidate resume and cover letter, change status to Hire,Offer,Rejected,Interview schedule,Interviwed",
+      "Candidate can set job preference's in profile seetings",
+      "Different Dashboard for each role"
+    ],
+    "projects_techs": [
+      "Tailwind CSS",
+      "JavaScript",
+      "React.JS",
+      "React Router",
+      "Tanstack Query",
+      "MongoDB",
+      "Node.JS",
+      "SSL-Commerz",
+      "Node Crons",
+      "JWT",
+      "Stripe",
+      "Express.JS",
+      "Firebase Auth",
+      "NodeMailer"
+    ]
+  }
+]
