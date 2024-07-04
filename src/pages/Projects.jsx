@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import HeadingText from '../Utils/HeadingText'
 const Projects = () => {
   const navigate = useNavigate();
 
@@ -121,15 +121,6 @@ const Projects = () => {
 
   const handleCardClick = (id) => {
     navigate(`/project/${id}`);
-  };
-
-  const HeadingText = ({ bgText, topText }) => {
-    return (
-      <div className="text-center">
-        <h1 className="text-6xl lg:text-8xl font-bold text-stone-800">{bgText}</h1>
-        <h2 className="text-2xl lg:text-4xl font-semibold text-white mt-2">{topText}</h2>
-      </div>
-    );
   };
 
   const SearchBar = () => {
