@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import HeadingText from '../Utils/HeadingText'
+import HeadingText from '../Utils/HeadingText';
+
 const Projects = () => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState("");
 
   const projects = [
     {
@@ -147,12 +149,22 @@ const Projects = () => {
             name="search"
             id="search"
             placeholder="search project by name or type"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             className="block p-3 px-10 min-w-[300px] bg-stone-900 border border-neutral-800 text-zinc-400 focus:border-violet-500 focus:ring-violet-500 sm:text-sm rounded-full transition focus:outline-none"
           />
         </div>
       </div>
     );
   };
+
+  const filteredProjects = projects.filter((project) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      project.project_name.toLowerCase().includes(query) ||
+      project.project_type.toLowerCase().includes(query)
+    );
+  });
 
   const ProjectCard = ({ project }) => {
     return (
@@ -194,7 +206,7 @@ const Projects = () => {
       </p>
       <SearchBar />
       <div className="grid lg:grid-cols-2 grid-cols-1 row-auto items-stretch gap-10 w-full my-20 font-poppins">
-        {projects.map((project) => (
+        {filteredProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
