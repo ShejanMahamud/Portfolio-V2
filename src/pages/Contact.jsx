@@ -9,7 +9,9 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_gtr5m35', 'template_s2rtdyv', form.current, 'user_youruserid')
+    emailjs.sendForm('service_gtr5m35', 'template_s2rtdyv', form.current, {
+      publicKey: '2C4OJqoyWORm8Z5Wb',
+    })
       .then((result) => {
         toast.success('Message Sent Successfully!');
       }, (error) => {
