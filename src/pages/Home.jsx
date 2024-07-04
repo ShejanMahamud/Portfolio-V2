@@ -40,7 +40,7 @@ const Home = () => {
         <div className="flex items-center text-[#A78BFA] font-medium uppercase text-base mb-6">
           <div onClick={() => navigate('/resume')} className="flex items-center border-l-2 border-t-2 border-b-2 border-opacity-10 px-6 py-3 border-gray-200 rounded-tl-full rounded-bl-full gap-2">
             <FiDownload />
-            <span>Resume</span>
+            <a href='https://drive.usercontent.google.com/u/0/uc?id=1r3I8ZLAY_yXSe93rU0RrHe4TyvDdpEuL&export=download' download='filename'>Resume</a>
           </div>
           <a href='https://www.linkedin.com/in/md-shejanmahamud/' className="flex items-center border-2 px-6 py-3 border-gray-200 border-opacity-10 rounded-tr-full rounded-br-full gap-2">
             <MdRemoveRedEye />
