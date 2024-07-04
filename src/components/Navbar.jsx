@@ -5,6 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { IoCodeWorking, IoDocumentTextOutline } from "react-icons/io5";
 import { RiHomeLine } from "react-icons/ri";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { SlEnvolope } from "react-icons/sl";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -93,6 +94,16 @@ const Navbar = () => {
                 : "text-gray-400 font-medium"
             }
           >
+            Contact
+          </NavLink>
+          <NavLink
+            to={"https://shejanmahamud.medium.com/"}
+            className={({ isActive }) =>
+              isActive
+                ? "text-violet-500 font-semibold"
+                : "text-gray-400 font-medium"
+            }
+          >
             Articles
           </NavLink>
         </ul>
@@ -149,6 +160,19 @@ const Navbar = () => {
           <div className="flex flex-col items-center gap-1">
             <IoDocumentTextOutline className="text-2xl" />
             <span className="text-xs font-normal">Resume</span>
+          </div>
+        </NavLink>
+        <NavLink
+          to={"/contact"}
+          className={({ isActive }) =>
+            isActive
+              ? "text-violet-500 font-semibold"
+              : "text-gray-400 font-medium"
+          }
+        >
+          <div className="flex flex-col items-center gap-1">
+            <SlEnvolope className="text-2xl" />
+            <span className="text-xs font-normal">Contact</span>
           </div>
         </NavLink>
         <NavLink
