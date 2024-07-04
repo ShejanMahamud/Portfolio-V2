@@ -38,7 +38,7 @@ const ProjectsDetails = () => {
   }
 
   return (
-    <div className="w-[80%] mx-auto mt-40 font-poppins">
+    <div className="lg:w-[80%] w-[90%] mx-auto lg:mt-40 mt-20 font-poppins">
       <div className="w-full relative z-10">
         <img
           src={project?.project_image}
