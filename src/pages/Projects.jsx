@@ -120,7 +120,7 @@ const Projects = () => {
   ];
 
   const handleCardClick = (id) => {
-    navigate(`/projects/${id}`);
+    navigate(`/project/${id}`);
   };
 
   const HeadingText = ({ bgText, topText }) => {
@@ -182,19 +182,12 @@ const Projects = () => {
             <h3 className="text-lg text-zinc-300 font-bold my-3">
               {project.project_name}
             </h3>
-            <p className="text-zinc-400">{project.project_des}</p>
-          </div>
-          <div className="mt-auto pt-6">
-            <div className="flex flex-wrap gap-2 mt-4">
-              {project.projects_techs.map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1 rounded-full text-xs font-medium bg-zinc-800 text-zinc-400"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <p className="text-zinc-400 text-sm lg:text-base">
+              {project.project_category}
+            </p>
+            <p className="text-zinc-400 text-sm lg:text-base mt-3 font-mukti">
+              {project.project_des}
+            </p>
           </div>
         </article>
       </div>
@@ -202,17 +195,19 @@ const Projects = () => {
   };
 
   return (
-    <section className="bg-stone-900 min-h-screen">
-      <div className="container mx-auto px-4 py-16">
-        <HeadingText bgText="Projects" topText="My Projects" />
-        <SearchBar />
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+    <div className="mt-40 w-[80%] mx-auto">
+      <HeadingText bgText={"FEATURED"} topText={"PROJECTS"} />
+      <p className="text-center text-zinc-300 my-5 lg:text-base md:text-sm text-xs tracking-wider">
+        {`Things I've built that prove my skills and capacity regarding the
+        technologies I mentioned.`}
+      </p>
+      <SearchBar />
+      <div className="grid lg:grid-cols-2 grid-cols-1 row-auto items-stretch gap-10 w-full my-20 font-poppins">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
