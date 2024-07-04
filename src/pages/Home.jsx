@@ -35,7 +35,7 @@ const Home = () => {
           to life on the web!
         </p>
         <p className="font-poppins text-gray-200 mb-4 lg:text-base text-sm">
-  Currently studying in <span className="text-[#A78BFA] font-bold">BBA in Management at Rajshahi College, Rajshahi</span>.
+  Currently studying in <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-violet-700 to-pink-700">BBA in Management at Rajshahi College, Rajshahi</span>.
 </p>
         <div className="flex items-center text-[#A78BFA] font-medium uppercase text-base mb-6">
           <div onClick={() => navigate('/resume')} className="flex items-center border-l-2 border-t-2 border-b-2 border-opacity-10 px-6 py-3 border-gray-200 rounded-tl-full rounded-bl-full gap-2">
