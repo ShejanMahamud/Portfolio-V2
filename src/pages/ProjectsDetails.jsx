@@ -49,7 +49,7 @@ const ProjectsDetails = () => {
       </div>
       <div className="flex items-center flex-col gap-3 relative z-50 text-[#D4D4D8]">
         <h1 className="text-3xl font-bold -mt-10">{project?.project_name}</h1>
-        <div className="flex items-center gap-3 text-xs md:text-md text-base text-center">
+        <div className="flex items-center gap-3 text-xs md:text-sm text-base text-center">
           <span className="text-center">{project?.project_category}</span>
           {" | "}
           <span className="text-center">{project?.project_type}</span>
