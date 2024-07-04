@@ -37,7 +37,11 @@ const Route = createBrowserRouter([
         {
           path: 'services',
           element: <Services/>
-        }
+        },
+          {
+              path: 'contact',
+              element: <Contact/>
+          }
       ],
       errorElement: <NotFound/>
     },
