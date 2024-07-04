@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import HeadingText from '../Utils/HeadingText';
-
+import toast from 'react-hot-toast';
 const Contact = () => {
   const form = useRef();
 
@@ -12,12 +12,11 @@ const Contact = () => {
       publicKey: '2C4OJqoyWORm8Z5Wb',
     })
       .then((result) => {
-          console.log(result.text);
-          alert('Message sent successfully!');
+          toast.success('Message Sent Successfully!');
+          
       }, (error) => {
-          console.log(error.text);
-          alert('Failed to send message. Please try again later.');
-      });
+        toast.error('Message Send Failed!')
+      }
       
     e.target.reset(); // Reset the form after submission
   };
