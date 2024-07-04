@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import HeadingText from '../Utils/HeadingText';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current)
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send message. Please try again later.');
+      });
+      
+    e.target.reset(); // Reset the form after submission
+  };
+
   return (
     <div className="w-[90%] mx-auto relative lg:px-20 px-5 mt-40 min-h-screen">
       <HeadingText bgText={"TOUCH"} topText={"CONTACT"} />
@@ -15,7 +33,7 @@ const Contact = () => {
         </a>{" "}
         me
       </p>
-      <form className="max-w-xl mx-auto mt-10 space-y-6">
+      <form ref={form} onSubmit={sendEmail} className="max-w-xl mx-auto mt-10 space-y-6">
         <div className="flex flex-col">
           <label htmlFor="name" className="text-zinc-300 mb-2">Name</label>
           <input
@@ -23,6 +41,7 @@ const Contact = () => {
             id="name"
             name="name"
             className="p-3 rounded-md bg-neutral-800 text-zinc-300 border border-stone-700 focus:outline-none focus:border-violet-700"
+            required
           />
         </div>
         <div className="flex flex-col">
@@ -32,6 +51,7 @@ const Contact = () => {
             id="email"
             name="email"
             className="p-3 rounded-md bg-neutral-800 text-zinc-300 border border-stone-700 focus:outline-none focus:border-violet-700"
+            required
           />
         </div>
         <div className="flex flex-col">
@@ -41,6 +61,7 @@ const Contact = () => {
             name="message"
             rows="5"
             className="p-3 rounded-md bg-neutral-800 text-zinc-300 border border-stone-700 focus:outline-none focus:border-violet-700"
+            required
           ></textarea>
         </div>
         <button
