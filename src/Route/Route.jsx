@@ -8,7 +8,7 @@ import ProjectsDetails from '../pages/ProjectsDetails';
 import Resume from '../pages/Resume';
 import Services from '../pages/Services';
 import Skills from '../pages/Skills';
-
+import Contact from '../pages/Contact'
 const Route = createBrowserRouter([
     {
       path: "/",
