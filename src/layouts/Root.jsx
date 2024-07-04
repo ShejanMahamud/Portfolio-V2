@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from './../components/Footer';
 import Navbar from './../components/Navbar';
-
+import { Toaster } from 'react-hot-toast';
 const Root = () => {
 
     const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +25,10 @@ const Root = () => {
         <>
         <Navbar/>
         <Outlet/>
+            <Toaster
+  position="top-right"
+  reverseOrder={true}
+/>
         <Footer/>
         </>
     )
