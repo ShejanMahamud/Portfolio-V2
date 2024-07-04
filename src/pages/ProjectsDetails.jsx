@@ -49,12 +49,12 @@ const ProjectsDetails = () => {
       </div>
       <div className="flex items-center flex-col gap-3 relative z-50 text-[#D4D4D8]">
         <h1 className="text-3xl font-bold -mt-10">{project?.project_name}</h1>
-        <div className="flex items-center gap-3 text-xs md:text-md text-base">
-          <span>{project?.project_category}</span>
+        <div className="flex items-center gap-3 text-xs md:text-md text-base text-center">
+          <span className="text-center">{project?.project_category}</span>
           {" | "}
-          <span>{project?.project_type}</span>
+          <span className="text-center">{project?.project_type}</span>
           {" | "}
-          <span>{project?.project_nature}</span>
+          <span className="text-center">{project?.project_nature}</span>
         </div>
       </div>
       <div className="w-full mt-20 grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2 row-auto items-start lg:p-10 p-5 rounded-lg ring-stone-800 ring-1 border-opacity-10 text-[#D4D4D8] lg:gap-10 gap-12">
