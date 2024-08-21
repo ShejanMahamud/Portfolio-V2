@@ -194,9 +194,7 @@ const Projects = () => {
             <p className="text-zinc-500 leading-relaxed text-sm md:text-base mt-2">
               <strong>Technologies:</strong> {project.projects_techs.join(", ")}
             </p>
-            <p className="text-zinc-500 leading-relaxed text-sm md:text-base mt-2">
-              <strong>Nature:</strong> {project.project_nature}
-            </p>
+    
           </div>
           <div className="text-zinc-400 text-xs flex items-center mt-4 space-x-3">
             <span>{project.projects_features.length} Features</span>
