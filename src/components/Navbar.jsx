@@ -87,7 +87,7 @@ const Navbar = () => {
             Resume
           </NavLink>
           <NavLink
-            to={"https://shejanmahamud.medium.com/"}
+            to={"/contact"}
             className={({ isActive }) =>
               isActive
                 ? "text-violet-500 font-semibold"
