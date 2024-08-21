@@ -182,15 +182,25 @@ const Projects = () => {
           </div>
           <img src={project.project_logo} alt={project.project_name} className="lg:w-16 w-14" />
           <div>
-            <h3 className="text-lg text-zinc-300 font-bold my-3">
+            <h3 className="text-lg text-zinc-300 font-bold mb-3 md:mb-4">
               {project.project_name}
             </h3>
-            <p className="text-zinc-400 text-sm lg:text-base">
-              {project.project_category}
-            </p>
-            <p className="text-zinc-400 text-sm lg:text-base mt-3 font-mukti">
+            <p className="text-zinc-500 leading-relaxed text-sm md:text-base">
               {project.project_des}
             </p>
+            <p className="text-zinc-500 leading-relaxed text-sm md:text-base mt-2">
+              <strong>Category:</strong> {project.project_category}
+            </p>
+            <p className="text-zinc-500 leading-relaxed text-sm md:text-base mt-2">
+              <strong>Technologies:</strong> {project.projects_techs.join(", ")}
+            </p>
+            <p className="text-zinc-500 leading-relaxed text-sm md:text-base mt-2">
+              <strong>Nature:</strong> {project.project_nature}
+            </p>
+          </div>
+          <div className="text-zinc-400 text-xs flex items-center mt-4 space-x-3">
+            <span>{project.projects_features.length} Features</span>
+            <span>{project.projects_techs.length} Technologies</span>
           </div>
         </article>
       </div>
@@ -198,14 +208,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="mt-40 w-[80%] mx-auto">
-      <HeadingText bgText={"FEATURED"} topText={"PROJECTS"} />
-      <p className="text-center text-zinc-300 my-5 lg:text-base md:text-sm text-xs tracking-wider">
-        {`Things I've built that prove my skills and capacity regarding the
-        technologies I mentioned.`}
-      </p>
+    <div className="relative px-4 sm:px-6 lg:px-8">
+      <HeadingText text={"Projects"} />
       <SearchBar />
-      <div className="grid lg:grid-cols-2 grid-cols-1 row-auto items-stretch gap-10 w-full my-20 font-poppins">
+      <div className="relative mt-16 max-w-lg sm:max-w-3xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3 md:max-w-none md:gap-8">
         {filteredProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
