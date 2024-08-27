@@ -1,68 +1,5 @@
 [
-  {
-    "id": 3,
-    "project_image": "https://i.ibb.co/mBT0s23/bookify.png",
-    "project_logo": "https://gist.githubusercontent.com/ShejanMahamud/55027157d9ed288e0c490b8f59878179/raw/b6f06773886c4314ccd39286a026afc0549f431e/bookify.svg",
-    "project_des": "Manage Library as Librarian & Borrow Book as User using MERN Stack",
-    "project_name": "Bookify",
-    "project_category": "Library Management",
-    "project_type": "Full-Stack",
-    "project_nature": "Personal",
-    "project_code": "https://github.com/ShejanMahamud",
-    "project_live": "https://bookify-library.netlify.app/",
-    "projects_features": [
-      "Librarian and User Role",
-      "Librarian can add book, delete book, update book",
-      "User can borrow book and return a book",
-      "Login/Registration",
-      "Dashboard for librarian"
-    ],
-    "projects_techs": [
-      "Tailwind CSS",
-      "JavaScript",
-      "React.JS",
-      "React Router",
-      "Tanstack Query",
-      "MongoDB",
-      "Express.JS",
-      "Firebase Auth"
-    ]
-  },
-  {
-    "id": 2,
-    "project_image": "https://i.ibb.co/2s5s5jd/jobify.png",
-    "project_name": "Jobify",
-    "project_logo": "https://gist.github.com/ShejanMahamud/6f5ae99646017228295820fbaed8f6fb/raw/fa2c804443a9ed19cc6212975c86283699bdaec8/logo.svg",
-    "project_des": "A complete job portal web app using MERN Stack",
-    "project_category": "Job Portal Web App",
-    "project_type": "Full-Stack",
-    "project_nature": "Personal(In Progress)",
-    "project_code": "https://github.com/ShejanMahamud/Jobify-Front-End",
-    "project_live": "https://jobify-web.netlify.app/",
-    "projects_features": [
-      "Role based authentication and authorization",
-      "Companies can post jobs, see candidates per specific job, candidate resume and cover letter, change status to Hire, Offer, Rejected, Interview schedule, Interviewed",
-      "Candidate can set job preferences in profile settings",
-      "Different Dashboard for each role"
-    ],
-    "projects_techs": [
-      "Tailwind CSS",
-      "JavaScript",
-      "React.JS",
-      "React Router",
-      "Tanstack Query",
-      "MongoDB",
-      "Node.JS",
-      "SSL-Commerz",
-      "Node Crons",
-      "JWT",
-      "Stripe",
-      "Express.JS",
-      "Firebase Auth",
-      "NodeMailer"
-    ]
-  },
-  {
+{
     "id": 1,
     "project_image": "https://i.postimg.cc/vTtTWLBv/Screenshot-19.png",
     "project_name": "NestQuest",
@@ -104,6 +41,69 @@
       "Express.JS",
       "Firebase Auth",
       "NodeMailer"
+    ]
+  },
+  {
+    "id": 2,
+    "project_image": "https://i.ibb.co/2s5s5jd/jobify.png",
+    "project_name": "Jobify",
+    "project_logo": "https://gist.github.com/ShejanMahamud/6f5ae99646017228295820fbaed8f6fb/raw/fa2c804443a9ed19cc6212975c86283699bdaec8/logo.svg",
+    "project_des": "A complete job portal web app using MERN Stack",
+    "project_category": "Job Portal Web App",
+    "project_type": "Full-Stack",
+    "project_nature": "Personal(In Progress)",
+    "project_code": "https://github.com/ShejanMahamud/Jobify-Front-End",
+    "project_live": "https://jobify-web.netlify.app/",
+    "projects_features": [
+      "Role based authentication and authorization",
+      "Companies can post jobs, see candidates per specific job, candidate resume and cover letter, change status to Hire, Offer, Rejected, Interview schedule, Interviewed",
+      "Candidate can set job preferences in profile settings",
+      "Different Dashboard for each role"
+    ],
+    "projects_techs": [
+      "Tailwind CSS",
+      "JavaScript",
+      "React.JS",
+      "React Router",
+      "Tanstack Query",
+      "MongoDB",
+      "Node.JS",
+      "SSL-Commerz",
+      "Node Crons",
+      "JWT",
+      "Stripe",
+      "Express.JS",
+      "Firebase Auth",
+      "NodeMailer"
+    ]
+  },
+{
+    "id": 3,
+    "project_image": "https://i.ibb.co/mBT0s23/bookify.png",
+    "project_logo": "https://gist.githubusercontent.com/ShejanMahamud/55027157d9ed288e0c490b8f59878179/raw/b6f06773886c4314ccd39286a026afc0549f431e/bookify.svg",
+    "project_des": "Manage Library as Librarian & Borrow Book as User using MERN Stack",
+    "project_name": "Bookify",
+    "project_category": "Library Management",
+    "project_type": "Full-Stack",
+    "project_nature": "Personal",
+    "project_code": "https://github.com/ShejanMahamud",
+    "project_live": "https://bookify-library.netlify.app/",
+    "projects_features": [
+      "Librarian and User Role",
+      "Librarian can add book, delete book, update book",
+      "User can borrow book and return a book",
+      "Login/Registration",
+      "Dashboard for librarian"
+    ],
+    "projects_techs": [
+      "Tailwind CSS",
+      "JavaScript",
+      "React.JS",
+      "React Router",
+      "Tanstack Query",
+      "MongoDB",
+      "Express.JS",
+      "Firebase Auth"
     ]
   }
 ]
